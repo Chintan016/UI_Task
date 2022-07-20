@@ -1,0 +1,255 @@
+// Header css start
+header {
+  height: 65px;
+  margin-left: 60px;
+  background: linear-gradient(
+    180deg,
+    rgba(254, 132, 21, 1) 0%,
+    rgba(255, 173, 17, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  color: #fff;
+  .h_left {
+    display: flex;
+    width: 65%;
+    .logo h2 {
+      padding: 0 45px;
+    }
+    .search {
+      background: #ffffff;
+      border: 1px solid #bcbcbc;
+      border-radius: 10px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      color: #777777;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      input {
+        border: none;
+        outline: none;
+        height: 100%;
+        width: calc(100% - 50px);
+        margin-left: 15px;
+      }
+      img {
+        height: 20px;
+        margin-left: 8px;
+      }
+    }
+  }
+  .h_right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 35px;
+    width: 35%;
+    .all_market {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 0 15px;
+      img {
+        height: 15px;
+      }
+    }
+    .notification {
+      position: relative;
+      margin: 10px 0;
+      margin-right: 20px;
+      .n_count {
+        position: absolute;
+        top: -7px;
+        right: -6px;
+        background-color: red;
+        border-radius: 50%;
+        height: 18px;
+        width: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+      }
+      img {
+        height: 25px;
+      }
+    }
+    .profile img {
+      margin: 0 8px;
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+    }
+    .r_drop img {
+      margin: 0 8px;
+      height: 20px;
+    }
+  }
+}
+// Header css end
+
+// Sidebar css start
+
+aside {
+  border: 1px solid blue;
+  height: 100vh;
+  width: 60px;
+}
+// Sidebar css end
+
+// Main Content css start
+
+.main-contain {
+  display: flex;
+  width: 100%;
+  gap: 35px;
+  padding: 35px;
+  .mc-left {
+    width: 70%;
+    // chart section
+    .card img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      padding: 10px;
+    }
+    // overview section
+    .overview {
+      .overview-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .overview-title {
+          font-size: 18px;
+          font-weight: 600;
+          color: #777777;
+        }
+        .overview-btn {
+          display: flex;
+          gap: 10px;
+        }
+      }
+      //   overview table css start
+      .overviiew-tables {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+        table {
+          width: 50%;
+        }
+      }
+      //   overview table css end
+    }
+    // overview section end
+
+    // recent Order css start
+    .recent {
+      .recent-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .recent-title {
+          font-size: 18px;
+          font-weight: 600;
+          color: #777777;
+        }
+      }
+      .recent-tabs {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(188, 188, 188, 0.6);
+        margin: 0 -18px;
+        p {
+          padding: 10px 25px;
+          color: #777777;
+        }
+        .active-tabs {
+          border-bottom: 3px solid #e67f00;
+        }
+      }
+      .recent-tab-content {
+        .rtc-order {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          padding: 10px 25px;
+          border-bottom: 1px solid rgba(188, 188, 188, 0.6);
+          margin: 0 -18px;
+          button {
+            width: 30%;
+            color: #fff;
+            text-transform: capitalize;
+          }
+          .primary-btn {
+            background-color: #50a5cc;
+          }
+          .success-btn {
+            background-color: #4fbb66;
+          }
+          .warning-btn {
+            background-color: #df5352;
+          }
+          .rtc-order-details {
+            .order-id {
+              font-size: 18px;
+              font-weight: 500;
+            }
+            .order-date {
+              font-size: 14px;
+              font-weight: 500;
+              color: #777777;
+              letter-spacing: 0.1em;
+            }
+          }
+        }
+      }
+    }
+    // recent Order css end
+  }
+  .mc-right {
+    width: 30%;
+    .notification-card {
+      height: 100%;
+    }
+    .notification {
+      color: #e67f00;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .message {
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(188, 188, 188, 0.6);
+      &:nth-last-child(2) {
+        border: none;
+      }
+      .m_name {
+        font-size: 16px;
+        font-weight: 400;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        span {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+    .all_noti {
+      color: #e67f00;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+    }
+  }
+}
+
+// Main Content css end

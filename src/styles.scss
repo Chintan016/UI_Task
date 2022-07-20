@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+// Google Font Poppins Import Link
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #e5e5e5;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgb(0 0 0 / 25%);
+//   height: 100%;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+button {
+  background-color: #e8e8e8;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: #7b7b7b;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.active-btn {
+  background-color: #e67f00;
+  color: #fff;
+}
+
+td,
+th {
+  padding: 0.5em 1em;
+  text-align: left;
+}
+table {
+  border: 1px solid rgba(188, 188, 188, 0.6);
+}
+thead th {
+  border-bottom: 1px solid rgba(188, 188, 188, 0.6);
+}
+
+.view-all {
+  color: #e67f00;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
